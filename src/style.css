@@ -1,0 +1,50 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.formkit-outer {
+  width: 100% !important;
+}
+.formkit-wrapper {
+  width: 100% !important;
+  max-width: none !important;
+}
+.formkit-inner {
+  width: 100% !important;
+  border-radius: 10px !important;
+  border: 0 !important;
+  outline: none !important;
+  background: #d9d9d9;
+}
+.formkit-input {
+  font-size: 16px;
+  width: 100% !important;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  height: 60px;
+  background: #d9d9d9;
+}
+
+#registration-example-incomplete {
+  display: none !important;
+}
+
+[data-invalid] .formkit-inner {
+  border-color: red;
+  box-shadow: 0 0 0 1px red;
+}
+
+[data-complete] .formkit-inner {
+  border-color: red;
+  box-shadow: 0 0 0 1px green;
+}
+[data-complete] .formkit-inner::after {
+  content: "✅";
+  display: block;
+  padding: 0.5em;
+}
